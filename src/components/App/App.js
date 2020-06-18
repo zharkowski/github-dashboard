@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from '../../logo.svg';
-import './App.css';
+import Main from '../../pages/Main/Main';
+import RepoCard from "../../pages/RepoCard/RepoCard";
+import {Switch, Route, Redirect} from 'react-router-dom';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
+	<Switch>
+		{/*<Route path="/home" component={Main} />*/}
+		{/*<Route path="/repo/:repoId" component={RepoCard} />*/}
+		<Route path="/home" render={(props) => (<Main {...props} />)} />
+		<Route path="/repo/:id" render={(props) => (<RepoCard {...props} />)} />
+
+		<Redirect from="/" to="/home"/>
+	</Switch>
 );
 
 export default App;
