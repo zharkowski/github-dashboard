@@ -1,13 +1,25 @@
 import React from "react";
 
-const Search = () => {
+const Search = (props) => {
+
+	const searchRepos = (evt) => {
+		evt.preventDefault();
+		const query = evt.target.query.value;
+		console.log(query);
+	}
+
 	return (
-		<form>
+		<form
+			onSubmit={searchRepos}
+		>
 			<input
 				type="text"
-				placeholder={"Repositories Search"}
-				onChange={() => console.log("")}
+				name="query"
+				placeholder="Repositories Search"
 			/>
+			<button type="submit">
+				Search
+			</button>
 		</form>
 	);
 }
