@@ -12,8 +12,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "webpack-dev-server -open",
-    "build": "webpack",
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.10.3",
+    "@babel/preset-env": "7.10.3",
     "@babel/preset-react": "7.10.1",
     "babel-loader": "8.1.0",
     "react-router-dom": "5.2.0",

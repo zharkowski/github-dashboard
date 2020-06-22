@@ -6,9 +6,9 @@ const ReposList = (props) => {
 
 	return (
 		<ul>
-			{repos.map((repo, i) => (
+			{repos.map((repo) => (
 				<li
-					key={i}>
+					key={repo.id}>
 					<h2>
 						<Link to={{
 							pathname: `/repo/${repo.id}`,

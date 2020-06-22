@@ -1,12 +1,12 @@
 import React from "react";
-import Search from "../../components/Search/Search";
-import ReposList from "../../components/ReposList/ReposList";
+import Search from "../../components/Search/Search.jsx";
+import ReposList from "../../components/ReposList/ReposList.jsx";
 
 const Main = () => {
 	const repos = [
 		{
 			id: 0,
-			name: `fpinscala`,
+			name: `fpinscalal`,
 		},
 		{
 			id: 1,

@@ -8,9 +8,10 @@ module.exports = {
 	},
 	devServer: {
 		contentBase: path.join(__dirname, `public`),
-		open: true,
+		open: false,
 		inline: true,
 		port: 3000,
+		historyApiFallback: true,
 	},
 	module: {
 		rules: [
@@ -18,10 +19,10 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
-					loader: "babel-loader"
+					loader: `babel-loader`,
 				}
 			}
 		]
 	},
-	devtool: `source-map`,
-}
+	devtool: 'source-map',
+};

@@ -1,6 +1,6 @@
 import React from 'react';
-import Main from '../../pages/Main/Main';
-import RepoCard from "../../pages/RepoCard/RepoCard";
+import Main from "../../pages/Main/Main.jsx";
+import RepoCard from "../../pages/RepoCard/RepoCard.jsx";
 import {Switch, Route, Redirect} from 'react-router-dom';
 
 const App = () => (
