@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = (props) => {
+const Search = () => {
 
 	const searchRepos = (evt) => {
 		evt.preventDefault();
