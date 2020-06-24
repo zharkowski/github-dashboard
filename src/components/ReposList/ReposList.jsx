@@ -5,11 +5,12 @@ const ReposList = (props) => {
 	const {repos} = props;
 
 	return (
-		<ul>
+		<ul className={`repos list`}>
 			{repos.map((repo) => (
 				<li
+					className={`repos__item`}
 					key={repo.id}>
-					<h2>
+					<h2 className={`repos__name`}>
 						<Link to={{
 							pathname: `/repo/${repo.id}`,
 							state: repo

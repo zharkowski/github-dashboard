@@ -10,14 +10,18 @@ const Search = () => {
 
 	return (
 		<form
+			className={`search`}
 			onSubmit={searchRepos}
 		>
 			<input
+				className={`search__input`}
 				type="text"
 				name="query"
 				placeholder="Repositories Search"
 			/>
-			<button type="submit">
+			<button
+				className={`search__button`}
+				type="submit">
 				Search
 			</button>
 		</form>
